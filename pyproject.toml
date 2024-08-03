@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "learnairflow"
+version = "0.1.0"
+description = ""
+authors = ["gurditsingh <gurdit.singh.041@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+apache-airflow = { version = "2.7.1", allow-prereleases = true }
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.pytest.ini_options]
+pythonpath=[
+    "."
+]
